@@ -1,0 +1,49 @@
+<!--index.wxml-->
+<!--index.wxml-->
+<view class="container" style='padding-top: 50rpx;'>
+  <view>
+    <image class='img' src="{{userInfo.imageurl}}"></image>
+  </view>
+  <view style='margin-top: 30px;'>
+    <view class="title">账号：</view>
+    <view class="txt">{{userInfo.Code}}</view>
+  </view>
+  <view style='margin-top: 30px;'>
+    <view class="title">账号名称：</view>
+    <view class="txt">{{userInfo.Name}}</view>
+  </view>
+  <view style='margin-top: 60px;'>
+    <view class="submitContainer">
+      <button class="submitBtn" bindtap='goScan'>
+        扫描工号
+      </button>
+      <view class='txt'>
+        {{empbarcode}}
+      </view>
+    </view>
+    <view class="submitContainer">
+      <button class="submitBtn" bindtap='scanRobotNo'>
+        扫描机号
+      </button>
+      <view class='txt'>
+        {{mchbarcode}}
+      </view>
+    </view>
+    <view class="submitContainer">
+      <button class="submitBtn" bindtap='scanProcess'>
+        扫描工序
+      </button>
+      <view class='txt'>
+        {{prdbarcode}}
+      </view>
+    </view>
+    <view class="submitContainer">
+      <button class="submitBtn" bindtap='scanWorkTicket'>
+        扫描工菲
+      </button>
+      <view class='txt'>
+        {{tckbarcode}}
+      </view>
+    </view>
+  </view>
+</view>
